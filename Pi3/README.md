@@ -19,7 +19,7 @@ git clone https://github.com/FYSETC/FYSETC-CTP40
 4. Then run the installer to install:
 
 ```
-cd "Pi3"
+cd FYSETC-CTP40/Pi3
 sudo ./install.sh
 ```
 

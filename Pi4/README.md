@@ -15,7 +15,7 @@ git clone https://github.com/FYSETC/FYSETC-CTP40
 Then run the installer to install:
 
 ```
-cd Pi4
+cd FYSETC-CTP40/Pi4
 sudo ./install.sh
 ```
 
@@ -31,7 +31,9 @@ This command will update your touch settings and screen configuration settings t
 * inverted - portrait, USB ports on bottom
 
 If you want to change the position of your CTP40 in a multi-display setup, you can use "Screen Configuration" as normal.
+
 Note: This is only works in Raspberry desktop system at the moment. And make sure you already set the the XAUTHORITY environment variable, for example you can 
+
 ```
 export XAUTHORITY=/home/pi/.Xauthority
 ```
