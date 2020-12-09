@@ -23,6 +23,8 @@ cd FYSETC-CTP40/Pi3
 sudo ./install.sh
 ```
 
+*Note: this script is base on the script from hyperpixel4.*
+
 ## Rotation
 
 To keep your touchscreen rotated with the display, you should rotate CTP40 using the `ctp40-rotate` command rather than "Screen Configuration."

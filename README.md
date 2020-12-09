@@ -4,7 +4,7 @@
 
 ### Install
 
-First clone this repo first, run 
+Clone this repo first, run 
 
 ```
 git clone https://github.com/FYSETC/FYSETC-CTP40
