@@ -23,9 +23,12 @@
 - Easy to install
 
 ## Dimensions
+------
 
 ![CTP40 Dimensions](images/CTP40 Dimensions.jpg)
+
 ## Schematic diagram
+------
 
 ![CTP40原理图](images/CTP40 Schematic diagram.jpg)
 
