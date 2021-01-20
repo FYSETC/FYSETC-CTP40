@@ -28,7 +28,7 @@
 
 ## Schematic diagram
 
-![CTP40 Schematic diagram](E:/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/docs/images/CTP40 Schematic diagram.jpg)
+![](E:\GITHUB\FYSETC-CTP40\images\CTP40 Schematic diagram.jpg)
 
 
 You can download it on our [Github](https://www.aliexpress.com/item/1005001704413148.html)
