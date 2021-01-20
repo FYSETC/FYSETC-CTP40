@@ -30,7 +30,6 @@
 
 ![](E:\GITHUB\FYSETC-CTP40\images\CTP40 Schematic diagram.jpg)
 
-
 You can download it on our [Github](https://www.aliexpress.com/item/1005001704413148.html)
 
 ## Install
