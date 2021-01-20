@@ -25,7 +25,7 @@
 ## Dimensions
 ------
 
-![CTP40 Dimensions](images/CTP40 Dimensions.jpg)
+![CTP40 Dimensions1](images/CTP40 Dimensions1.jpg)
 
 ## Schematic diagram
 ------
