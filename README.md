@@ -2,7 +2,7 @@
 
 ------
 
-![4.0CTP](E:/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/docs/images/4.0CTP.JPG)
+![4.0CTP](images/4.0CTP.JPG)
 
 4 INCH CTP LCD(CTP40) is an 800x480 pixel display for the Raspberry Pi, with optional capacitive touchscreen.
 
@@ -24,11 +24,10 @@
 
 ## Dimensions
 
-![CTP40 Dimensions](E:/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/docs/images/CTP40%20Dimensions.jpg)
-
+![CTP40 Dimensions](images/CTP40 Dimensions.jpg)
 ## Schematic diagram
 
-![](E:\GITHUB\FYSETC-CTP40\images\CTP40 Schematic diagram.jpg)
+![CTP40原理图](images/CTP40 Schematic diagram.jpg)
 
 You can download it on our [Github](https://www.aliexpress.com/item/1005001704413148.html)
 
