@@ -23,13 +23,8 @@
 - Easy to install
 
 ## Dimensions
-------
-
-![CTP40 Dimensions1](images/CTP40 Dimensions1.jpg)
-
+![CTP40 Dimensions](images/CTP40 Dimensions.jpg)
 ## Schematic diagram
-------
-
 ![CTP40原理图](images/CTP40 Schematic diagram.jpg)
 
 You can download it on our [Github](https://www.aliexpress.com/item/1005001704413148.html)
