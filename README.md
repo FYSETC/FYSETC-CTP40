@@ -36,6 +36,10 @@ You can download it on our [Github](https://www.aliexpress.com/item/100500170441
 
 ## Install
 
+If your Raspberry Pi needs to be fixed on the panel:
+![installation1](images/installation1.jpg)
+If your Raspberry Pi is not fixed:
+![installation2](images/installation2.jpg)
 Clone this repo first, run 
 
 ```
