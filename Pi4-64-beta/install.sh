@@ -7,7 +7,7 @@ ROTATE_NAME="ctp40-rotate"
 BINARY_PATH="/usr/bin"
 OVERLAY_PATH="/boot/overlays"
 OVERLAY_NAME="ctp40.dtbo"
-OVERLAY_SRC="ctp40-overlay.dts"
+OVERLAY_SRC="ctp40.dts"
 
 CONFIG="/boot/config.txt"
 
