@@ -47,14 +47,74 @@ git clone https://github.com/FYSETC/FYSETC-CTP40
 
 There are three folder name `Pi3` and `Pi4` and `Pi4-64-beta`, If you are using  Raspberry Pi3 and older device, please follow the README file in `Pi3` folder. And if you are using Raspberry Pi4 32bit OS, then follow the README file in `Pi4` folder. And if you are using Raspberry Pi4 64bit OS, then follow the README file in `Pi4-64-beta` folder.
 
-## Shop
+## How to change backlight
 
-------
+### 1. Install pigpio
+
+First we need to install pigpio library, you can follow the instruction [here](http://abyz.me.uk/rpi/pigpio/download.html).
+
+```
+wget https://github.com/joan2937/pigpio/archive/master.zip
+unzip master.zip
+cd pigpio-master
+make
+sudo make install
+```
+
+If the Python part of the install fails it may be because you need the setup tools.
+
+```
+sudo apt install python-setuptools python3-setuptools
+```
+
+### 2. Copy `backlight.py` to your pi
+
+There is `backlight.py` file in the repo, copy it to`/home/pi` path
+
+### 3. Enable `backlight.service`
+
+Copy the `backlight.service` file in this repo to `/etc/systemd/system`
+
+```pigpiod
+sudo cp backlight.service /etc/sysetmd/system/backlight.service
+```
+
+inform `systemd` that a new service has been added. This is done with the following command:
+
+```
+sudo systemctl daemon-reload
+```
+
+Now you can attempt to start the service using the following command:
+
+```
+sudo systemctl start backlight.service
+```
+
+Enable it to run at boot
+
+```
+sudo systemctl enable backlight.service
+```
+
+### 4. Change backlight value
+
+```
+nano /pi/home/backlight.py
+```
+
+change `128` to the value you want.
+
+### 5. Reboot
+
+```
+sudo reboot
+```
+
+## Shop
 
 [FYSETC-4INCH CTP LCD](https://www.aliexpress.com/item/1005002011585873.html?spm)
 
 ## Tech Support
-
-------
 
 Please submit any technical issue into our [github](https://github.com/FYSETC/FYSETC-CTP40) or [forum](http://forum.fysetc.com/) 

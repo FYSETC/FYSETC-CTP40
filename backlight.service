@@ -1,0 +1,11 @@
+[Unit]
+Description=Daemon required to control GPIO pins via pigpio
+
+[Service]
+ExecStartPre=/usr/local/bin/pigpiod
+ExecStart=/usr/bin/python /home/pi/backlight.py
+ExecStop=/bin/systemctl kill pigpiod
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
