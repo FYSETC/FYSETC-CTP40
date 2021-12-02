@@ -39,6 +39,9 @@ If your Raspberry Pi needs to be fixed on the panel:
 ![installation1](images/installation1.jpg)
 If your Raspberry Pi is not fixed:
 ![installation2](images/installation2.jpg)
+
+## Driver install
+
 Clone this repo first, run 
 
 ```
@@ -46,6 +49,12 @@ git clone https://github.com/FYSETC/FYSETC-CTP40
 ```
 
 There are three folder name `Pi3` and `Pi4` and `Pi4-64-beta`, If you are using  Raspberry Pi3 and older device, please follow the README file in `Pi3` folder. And if you are using Raspberry Pi4 32bit OS, then follow the README file in `Pi4` folder. And if you are using Raspberry Pi4 64bit OS, then follow the README file in `Pi4-64-beta` folder.
+
+if you run bullseye system and you get blank screen, better to comment out as below. Don't have a better solution now, i will keep looking into it.
+
+```
+#dtoverlay=vc4-kms-v3d
+```
 
 ## How to change backlight
 
