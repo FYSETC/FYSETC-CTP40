@@ -50,7 +50,7 @@ git clone https://github.com/FYSETC/FYSETC-CTP40
 
 There are three folder name `Pi3` and `Pi4` and `Pi4-64-beta`, If you are using  Raspberry Pi3 and older device, please follow the README file in `Pi3` folder. And if you are using Raspberry Pi4 32bit OS, then follow the README file in `Pi4` folder. And if you are using Raspberry Pi4 64bit OS, then follow the README file in `Pi4-64-beta` folder.
 
-if you run bullseye system and you get blank screen, better to comment out as below. Don't have a better solution now, i will keep looking into it.
+if you run bullseye system and you get blank screen, better to comment out below in `/boot/config.txt` file. Don't have a better solution now, i will keep looking into it.
 
 ```
 #dtoverlay=vc4-kms-v3d
