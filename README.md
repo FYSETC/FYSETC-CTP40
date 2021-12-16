@@ -6,7 +6,7 @@
 
 4 INCH CTP LCD(CTP40) is an 800x480 pixel display for the Raspberry Pi, with optional capacitive touchscreen.
 
-## Features
+## 1. Features
 
 - Size: 89.8mm x 58mm, the holes are fully compatible with Raspberry Pi .
 - High-speed DPI interface
@@ -22,25 +22,27 @@
 - Compatible with all 40-pin header Raspberry Pi models
 - Easy to install
 
-## Dimensions
+## 2. Dimensions
 
 
 ![Dimensions](images/Dimensions.jpg)
-## Schematic diagram
+## 3. Schematic diagram
 
 
 ![Schematic](images/Schematic.jpg)
 
 You can download it on our [Github](https://www.aliexpress.com/item/1005001704413148.html)
 
-## Install
+## 4. Install
+
+### 4.1 Pi install
 
 If your Raspberry Pi needs to be fixed on the panel:
 ![installation1](images/installation1.jpg)
 If your Raspberry Pi is not fixed:
 ![installation2](images/installation2.jpg)
 
-## Driver install
+### 4.2 Driver install
 
 Clone this repo first, run 
 
@@ -48,7 +50,7 @@ Clone this repo first, run
 git clone https://github.com/FYSETC/FYSETC-CTP40
 ```
 
-There are three folder name `Pi3` and `Pi4` and `Pi4-64-beta`, If you are using  Raspberry Pi3 and older device, please follow the README file in `Pi3` folder. And if you are using Raspberry Pi4 32bit OS, then follow the README file in `Pi4` folder. And if you are using Raspberry Pi4 64bit OS, then follow the README file in `Pi4-64-beta` folder.
+There are three folder name `Pi3` and `Pi4` and `Pi4-64-beta`, If you are using  Raspberry Pi3 and older device, please follow the README file in `Pi3` folder. And if you are using Raspberry Pi4 32bit OS, then follow the README file in `Pi4` folder. And if you are using Raspberry Pi4 64bit OS, then follow the `README` file in `Pi4-64-beta` folder.
 
 if you run bullseye system and you get blank screen, better to comment out below in `/boot/config.txt` file. Don't have a better solution now, i will keep looking into it.
 
@@ -56,9 +58,9 @@ if you run bullseye system and you get blank screen, better to comment out below
 #dtoverlay=vc4-kms-v3d
 ```
 
-## How to change backlight
+## 5. How to change backlight
 
-### 1. Install pigpio
+### Step 1. Install pigpio
 
 First we need to install pigpio library, you can follow the instruction [here](http://abyz.me.uk/rpi/pigpio/download.html).
 
@@ -76,11 +78,11 @@ If the Python part of the install fails it may be because you need the setup too
 sudo apt install python-setuptools python3-setuptools
 ```
 
-### 2. Copy `backlight.py` to your pi
+### Step 2. Copy `backlight.py` to your pi
 
 There is `backlight.py` file in the repo, copy it to`/home/pi` path
 
-### 3. Enable `backlight.service`
+### Step 3. Enable `backlight.service`
 
 Copy the `backlight.service` file in this repo to `/etc/systemd/system`
 
@@ -106,7 +108,7 @@ Enable it to run at boot
 sudo systemctl enable backlight.service
 ```
 
-### 4. Change backlight value
+### Step 4. Change backlight value
 
 ```
 nano /pi/home/backlight.py
@@ -114,16 +116,24 @@ nano /pi/home/backlight.py
 
 change `128` to the value you want.
 
-### 5. Reboot
+### Step 5. Reboot
 
 ```
 sudo reboot
 ```
 
-## Shop
+## 6. OS image
+
+We provide you and example OS image here([dropbox](https://www.dropbox.com/s/4nabe5on0xgnlrw/CTP40-pi4-octopi0.18-octoprint-octoscreen-octolapse-polarcloud-octopod-fysetc-splashscreen.img?dl=0)) for you. It is base on `Octopi0.18`. 
+
+### 6.1 how to flash
+
+Before flash, you need an SD card , minimum requirement of SD card capacity is 8G. Please prepare that first. And then you can use this software [here](https://www.balena.io/etcher/) to install. Well that are so many OS flash tool that you can use. And there are a lot of tutorial if you google `how to flash os image`.
+
+## 7. Shop
 
 [FYSETC-4INCH CTP LCD](https://www.aliexpress.com/item/1005002011585873.html?spm)
 
-## Tech Support
+## 8. Tech Support
 
 Please submit any technical issue into our [github](https://github.com/FYSETC/FYSETC-CTP40) or [forum](http://forum.fysetc.com/) 
