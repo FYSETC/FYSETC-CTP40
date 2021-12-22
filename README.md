@@ -130,6 +130,22 @@ We provide you and example OS image here([dropbox](https://www.dropbox.com/s/4na
 
 Before flash, you need an SD card , minimum requirement of SD card capacity is 8G. Please prepare that first. And then you can use this software [here](https://www.balena.io/etcher/) to install. Well that are so many OS flash tool that you can use. And there are a lot of tutorial if you google `how to flash os image`.
 
+### 6.2 OctoPi
+
+You can login in Octoprint with the following account and password.
+
+```
+Account: FYSETC
+Password: 12345678
+```
+
+OS SSH login account and password
+
+```
+Account: pi
+Password: raspberry
+```
+
 ## 7. Shop
 
 [FYSETC-4INCH CTP LCD](https://www.aliexpress.com/item/1005002011585873.html?spm)
