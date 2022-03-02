@@ -45,9 +45,19 @@
             /* needed to avoid dtc warning */
             #address-cells = <1>;
             #size-cells = <0>;
-            ft6236: ft6236@14 {
+            ft6236_14: ft6236@14 {
                 compatible = "goodix,gt911";
                 reg = <0x14>;
+                interrupt-parent = <&gpio>;
+                interrupts = <27 2>;
+                touchscreen-size-x = <480>;
+                touchscreen-size-y = <800>;
+                touchscreen-x-mm = <51>;
+                touchscreen-y-mm = <85>;
+            };
+            ft6236_5d: ft6236@5d {
+                compatible = "goodix,gt911";
+                reg = <0x5d>;
                 interrupt-parent = <&gpio>;
                 interrupts = <27 2>;
                 touchscreen-size-x = <480>;
@@ -58,26 +68,47 @@
         };
     };
     fragment@4 {
-        target = <&ft6236>;
+        target = <&ft6236_14>;
         __dormant__ {
             touchscreen-inverted-x;
         };
     };
     fragment@5 {
-        target = <&ft6236>;
+        target = <&ft6236_14>;
         __overlay__ {
             touchscreen-inverted-y;
         };
     };
     fragment@6 {
-        target = <&ft6236>;
+        target = <&ft6236_14>;
+        __overlay__ {
+            touchscreen-swapped-x-y;
+        };
+    };
+    fragment@7 {
+        target = <&ft6236_5d>;
+        __dormant__ {
+            touchscreen-inverted-x;
+        };
+    };
+    fragment@8 {
+        target = <&ft6236_5d>;
+        __overlay__ {
+            touchscreen-inverted-y;
+        };
+    };
+    fragment@9 {
+        target = <&ft6236_5d>;
         __overlay__ {
             touchscreen-swapped-x-y;
         };
     };
     __overrides__ {
-        touchscreen-inverted-x = <0>,"+4";
-        touchscreen-inverted-y = <0>,"-5";
-        touchscreen-swapped-x-y = <0>,"-6";
+        touchscreen-inverted-x = <0>,"+4",
+                                 <0>,"+7";
+        touchscreen-inverted-y = <0>,"-5",
+                                 <0>,"-8";
+        touchscreen-swapped-x-y = <0>,"-6",
+                                  <0>,"-9";
     };
 };
