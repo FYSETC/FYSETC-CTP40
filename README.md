@@ -111,7 +111,7 @@ sudo systemctl enable backlight.service
 ### Step 4. Change backlight value
 
 ```
-nano /pi/home/backlight.py
+nano /home/pi/backlight.py
 ```
 
 change `128` to the value you want.
